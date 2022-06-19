@@ -1,4 +1,4 @@
-async function generate () {
+async function getAdvice () {
   const num_adv = document.querySelector(".num_adv")
   const text_adv = document.querySelector(".text_advice")
 
@@ -9,4 +9,12 @@ async function generate () {
   num_adv.textContent = data.slip.id
   text_adv.textContent = data.slip.advice
   text_adv.style.display = "block"
+}
+
+window.onload = () =>{
+  getAdvice()
+}
+
+function generate () {
+  getAdvice()
 }
