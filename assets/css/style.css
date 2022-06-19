@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+:root {
+  --light-Cyan : hsl(193, 38%, 86%);
+  --Neon-Green : hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* > *  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-block-size: 100vh;
+  min-inline-size: 100vw;
+  background-color: var(--Dark-Blue);
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  min-width: 255px;
+  background-color: var(--Dark-Grayish-Blue);
+  max-width: 400px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-Cyan);
+  border-radius: 1em;
+  box-shadow: 1px 1px 10px var(--Dark-Blue);
+  position: relative;
+}
+
+.card header {
+  color: var(--Neon-Green);
+  display: flex;
+  justify-content: center;
+}
+
+.card main {
+  margin-top: 1em;
+  color: var(--light-Cyan);
+  font-weight: 800;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+  position: relative;
+}
+
+.footer-quote {
+  font-size: 3em;
+  font-weight: 800;
+  width: 100%;
+}
+
+.footer-quote:before,
+.footer-quote:after {
+  background-color: var(--Grayish-Blue);
+  content: "";
+  height: 1px;
+  position: absolute;
+  width: 40%;
+  top: 30%;
+}
+
+.footer-quote:before {
+  right: -.2em;
+  margin-left: -40%;
+}
+
+.footer-quote:after {
+  left: -0.2em;
+  margin-right: -70%;
+}
+
+.generate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+  padding: .7em;
+  position: absolute;
+  bottom: -10%;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 612px) {
+  
+}
+
+@media screen and (min-width: 762px) {
+  
+}
+
+@media screen and (min-width: 992px) {
+  
+}
+
+@media screen and (min-width: 1440px) {
+  
+}
